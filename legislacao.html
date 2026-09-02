@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legislação — GCM Iguatu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+  <!-- <div class="gov-strip">
+    <div class="wrap">
+      <span>Prefeitura Municipal de Iguatu · Secretaria de Segurança Pública Municipal</span>
+      <span><strong>Portal em preparação</strong> — conteúdo de exemplo para revisão interna</span>
+    </div>
+  </div> -->
+
+  <div class="masthead">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/img/brasao-gcm.png" alt="Brasão da GCM Iguatu">
+        <div class="title-block">
+          <span class="kicker label">GUARDA CIVIL MUNICIPAL · IGUATU-CE</span>
+          <div class="paper-name">Notícias GCM Iguatu</div>
+        </div>
+      </div>
+      <div class="today" id="todayDate"></div>
+    </div>
+  </div>
+
+  <nav class="tabs">
+    <div class="wrap">
+      <div class="tablist" id="tabList">
+        <a href="index.html">Notícias</a>
+        <a href="patrulha-maria-da-penha.html">Patrulha Maria da Penha</a>
+        <a href="legislacao.html">Legislação</a>
+        <a href="sobre.html">Sobre nós</a>
+      </div>
+      <button id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Documentação</span>
+          <h2>Legislação</h2>
+          <p>Leis que regem a atividade da Guarda Civil Municipal de Iguatu.</p>
+        </div>
+        <div class="doc-list">
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 772, de 20 de junho de 2002 — Lei de Criação</div><div class="doc-desc">Estrutura a Guarda Civil Municipal de Iguatu e dá outras providências.</div></div>
+            <a class="go" href="#" data-link="lei772">Ler documento →</a>
+          </div>
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 2.974, de 30 de junho de 2022 — PCCV</div><div class="doc-desc">Institui o Plano de Cargos, Carreiras e Vencimentos da Guarda Civil Municipal de Iguatu</div></div>
+            <a class="go" href="#" data-link="lei2974">Ler documento →</a>
+          </div>
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 2.891/2021 — Corregedoria e Ouvidoria</div><div class="doc-desc">Institui a Corregedoria e a Ouvidoria da Guarda Civil Municipal de Iguatu</div></div>
+            <a class="go" href="#" data-link="lei2891">Ler documento →</a>
+          </div>
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 2.892/2021 — Centro de Formação</div><div class="doc-desc">Institui o Centro de Formação da Guarda Civil Municipal de Iguatu</div></div>
+            <a class="go" href="#" data-link="lei2892">Ler documento →</a>
+          </div>
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 2.686, de 17 de junho de 2019 — Código de Conduta</div><div class="doc-desc">Institui o Código de Conduta dos agentes da Guarda Civil Municipal de Iguatu</div></div>
+            <a class="go" href="#" data-link="lei2686">Ler documento →</a>
+          </div>
+          <div class="doc-row">
+            <div><div class="doc-name">Lei nº 3.343, de 27 de maio de 2026 - (GEMP)</div><div class="doc-desc">Institui o Grupo Especializado Maria da Penha no âmbito da GCM de Iguatu</div></div>
+            <a class="go" href="#" data-link="lei3343">Ler documento →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fbrand">
+        <img src="assets/img/brasao-gcm.png" alt="GCM Iguatu">
+        <span>Guarda Civil Municipal de Iguatu</span>
+      </div>
+      <div class="flinks">
+        <a href="index.html">Notícias</a>
+        <a href="patrulha-maria-da-penha.html">Patrulha Maria da Penha</a>
+        <a href="legislacao.html">Legislação</a>
+        <a href="sobre.html">Sobre nós</a>
+      </div>
+    </div>
+    <div class="foot-note">Site feito e mantido pelo Setor Administrativo da GCM Iguatu. © Guarda Civil Municipal de Iguatu-CE.</div>
+  </footer>
+
+<script src="assets/js/site.js"></script>
+<script>
+  const d = new Date();
+  document.getElementById("todayDate").textContent =
+    d.toLocaleDateString("pt-BR", { weekday: "long", day: "2-digit", month: "long", year: "numeric" });
+
+  // Troque cada URL pelo endereço real do PDF/página da lei.
+  const LINKS = {
+    lei772:  "https://drive.google.com/file/d/1NiDJN38wk8PKpp7VuwHLZAak0mRqK9Ue/view?usp=sharing",
+    lei2686: "https://drive.google.com/file/d/1LYp29ykYmtWoSPyTLXxHCthtj6GRSXhF/view?usp=sharing",
+    lei2891: "https://drive.google.com/file/d/1hym3bCKFWzFVB9yNqCBuVgFK73hINpno/view?usp=sharing",
+    lei2892: "https://drive.google.com/file/d/1iN9TpNpgNjBw9v5K_M7ff0XfodfMAtNQ/view?usp=sharing",
+    lei2974: "https://drive.google.com/file/d/18mhDGHKrB7-6t7EnaDVykYAX0kJeZgZu/view?usp=sharing",
+    lei3343: "https://drive.google.com/file/d/1eiA8Dkd_p-3C8D0LEgIrBKoOxPkolRJn/view?usp=sharing"
+    // normas:  "https://gcmiguatu.com.br/normas"
+  };
+  document.querySelectorAll("[data-link]").forEach(el => {
+    const k = el.getAttribute("data-link");
+    if (LINKS[k]) el.setAttribute("href", LINKS[k]);
+  });
+</script>
+</body>
+</html>
