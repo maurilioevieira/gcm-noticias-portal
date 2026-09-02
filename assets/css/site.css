@@ -359,6 +359,9 @@ nav.tabs a.active {
         width: 32px;
         height: 32px;
         font-size: 0.85rem;
+        background: #fff;
+        color: var(--navy-deep);
+        border: none;
     }
 }
 
