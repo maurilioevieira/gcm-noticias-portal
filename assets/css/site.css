@@ -363,6 +363,9 @@ nav.tabs a.active {
         color: var(--navy-deep);
         border: none;
     }
+    .slider-arrow:hover {
+        background: #fff;
+    }
 }
 
 /* ---------- SEÇÃO GENÉRICA ---------- */
