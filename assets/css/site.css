@@ -345,7 +345,7 @@ nav.tabs a.active {
 
 @media (max-width: 760px) {
     .hero-slide {
-        aspect-ratio: 4/3;
+        aspect-ratio: 4/5;
     }
     .hero-slide .info {
         padding: 16px 18px 14px;
@@ -390,7 +390,7 @@ section {
 
 /* ---------- CARDS DE POSTAGEM ---------- */
 .thumb {
-    aspect-ratio: 16/10;
+    aspect-ratio: 1/1;
     width: 100%;
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
     position: relative;
